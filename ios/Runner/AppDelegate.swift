@@ -1,9 +1,9 @@
 import UIKit
 import Flutter
 import GoogleMaps
-import UserNotification
+import UserNotifications  // Fix the module name
 
-@UIApplicationMain
+@main
 @objc class AppDelegate: FlutterAppDelegate {
   override func application(
     _ application: UIApplication,
@@ -13,7 +13,12 @@ import UserNotification
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
-  UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-    // Handle granting of permissions
+  
+  // Move the code inside a proper function scope
+  override func applicationDidBecomeActive(_ application: UIApplication) {
+    // Request notification permission
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+      // Handle granting of permissions
+    }
   }
 }

@@ -47,10 +47,10 @@ dependencies:
   extended_phone_number_input: ^1.0.2
   flutter_animation_progress_bar: ^2.3.1
   staggered_grid_view_flutter: ^0.0.4
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.15.3
-  firebase_storage: ^11.5.6
-  cloud_firestore: ^4.13.6
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  firebase_storage: ^12.4.5
+  cloud_firestore: ^5.6.6
   crypto: ^3.0.3
   uuid: ^4.2.2
   google_places_flutter: ^2.0.6
@@ -64,6 +64,8 @@ dependencies:
   geocoding: ^2.1.1
   flutter_polyline_points: ^1.0.0
   dialog_alert: ^0.0.3
+  win32: ^5.0.0
+
 
 
 
